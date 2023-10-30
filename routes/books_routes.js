@@ -8,7 +8,7 @@ module.exports = task_toutes => {
     router.get('', require('../controllers/books_controller/boooks_lists').get_books)
 
     //  // route to edit task
-    router.patch('/:book_id', require('../controllers/books_controller/update_task').update_bok)
+    router.patch('/:book_id', require('../controllers/books_controller/update_book').update_bok)
 
     //  // route to get matrices
      router.delete('/:book_id', require('../controllers/books_controller/delete_books').deletebook)
