@@ -21,7 +21,7 @@ exports.get_books = async (req, res) => {
             if(!book){
                 return res.status(200).json({
                     status: false,
-                    message: `Book Not Exist Having Id: ${req.params.taskId}`
+                    message: `Book Not Exist Having Id: ${req.query.book_id}`
                 })
             }
 
